@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Agent Handlowy — Analiza rynkowa</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:-apple-system,Arial,sans-serif;background:#0a0a0a;color:#fff;line-height:1.6}
+  .c{max-width:1000px;margin:0 auto;padding:40px 20px}
+  header{text-align:center;padding:70px 0}
+  h1{font-size:3.2em;color:#0f0;margin-bottom:16px}
+  .lead{font-size:1.25em;color:#aaa;margin-bottom:36px}
+  .btn-hero{display:inline-block;background:#0f0;color:#000;padding:16px 40px;border-radius:10px;text-decoration:none;font-weight:700;font-size:1.1em;transition:.2s}
+  .btn-hero:hover{background:#0c0;transform:scale(1.05)}
+  h2{color:#0f0;margin:50px 0 24px;font-size:1.8em;text-align:center}
+  .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin:40px 0}
+  .f{background:#001a00;padding:24px;border-radius:12px;border:1px solid #0f0}
+  .f h3{color:#0f0;margin-bottom:10px;font-size:1.1em}
+  .f p{color:#aaa;font-size:.95em}
+  .pricing{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin:50px 0}
+  .plan{background:#001a00;padding:32px;border-radius:12px;border:2px solid #333;text-align:center}
+  .plan.best{border-color:#0f0;transform:scale(1.03)}
+  .plan h3{color:#0f0;font-size:1.4em;margin-bottom:16px}
+  .plan .p{font-size:2.6em;color:#fa0;font-weight:700;margin:20px 0}
+  .plan .p small{font-size:.35em;color:#888}
+  .plan ul{list-style:none;text-align:left;margin:20px 0}
+  .plan li{padding:10px 0;color:#aaa;font-size:.95em}
+  .plan li::before{content:"✅ ";color:#0f0}
+  .plan a{display:block;background:#0f0;color:#000;padding:14px;border-radius:8px;text-decoration:none;font-weight:700;margin-top:20px}
+  .plan a:hover{background:#0c0}
+  .form{background:#001a00;padding:44px;border-radius:14px;border:1px solid #0f0;margin:60px 0}
+  .form h2{margin-top:0}
+  .form p{color:#aaa;text-align:center;margin-bottom:24px}
+  .form input{width:100%;padding:16px;margin:10px 0;background:#000;border:1px solid #0f0;color:#fff;border-radius:8px;font-size:1em}
+  .form button{width:100%;padding:16px;background:#0f0;color:#000;border:none;border-radius:8px;font-size:1.1em;font-weight:700;cursor:pointer;margin-top:20px}
+  .form button:hover{background:#0c0}
+  footer{text-align:center;padding:50px 0;color:#666;border-top:1px solid #333;margin-top:60px}
+</style>
+</head>
+<body>
+<div class="c">
+  <header>
+    <h1>🛒 Agent Handlowy</h1>
+    <p class="lead">Automatyczna analiza rynkowa. Znajduje okazje zanim ktokolwiek inny je zauważy.</p>
+    <a href="#signup" class="btn-hero">🚀 Start za darmo</a>
+  </header>
+
+  <h2>Co robi Agent Handlowy?</h2>
+  <div class="features">
+    <div class="f"><h3>📊 Amazon</h3><p>Monitoruje ceny, popyt, konkurencję w czasie rzeczywistym.</p></div>
+    <div class="f"><h3>🛍️ Allegro</h3><p>Śledzi polski rynek, znajduje luki cenowe i okazje.</p></div>
+    <div class="f"><h3>🏆 Ranking</h3><p>Sortuje produkty po marży i ryzyku. Mówi co kupić.</p></div>
+    <div class="f"><h3>🚨 Alerty</h3><p>Powiadomienia gdy pojawi się okazja lub zmiana trendu.</p></div>
+  </div>
+
+  <h2>Cennik</h2>
+  <div class="pricing">
+    <div class="plan">
+      <h3>Free</h3>
+      <div class="p">0 <small>PLN/mies.</small></div>
+      <ul><li>10 analiz dziennie</li><li>1 marketplace</li><li>Brak alertów</li></ul>
+      <a href="#signup">Start za darmo</a>
+    </div>
+    <div class="plan best">
+      <h3>Pro ⭐</h3>
+      <div class="p">100 <small>PLN/mies.</small></div>
+      <ul><li>100 analiz dziennie</li><li>Amazon + Allegro</li><li>Alerty email</li><li>Eksport CSV</li></ul>
+      <a href="#signup">Wybierz Pro</a>
+    </div>
+    <div class="plan">
+      <h3>Business</h3>
+      <div class="p">500 <small>PLN/mies.</small></div>
+      <ul><li>Nieograniczone analizy</li><li>Wszystkie marketplace</li><li>Alerty SMS + email</li><li>API dostęp</li></ul>
+      <a href="#signup">Wybierz Business</a>
+    </div>
+  </div>
+
+  <div class="form" id="signup">
+    <h2>🚀 Zapisz się na listę</h2>
+    <p>Pierwsi 100 klientów dostaje 50% zniżki na pierwsze 3 miesiące.</p>
+    <form onsubmit="event.preventDefault();alert('Zapisano! Odezwiemy się wkrótce.')">
+      <input type="email" placeholder="Twój email" required>
+      <input type="text" placeholder="Twoje imię" required>
+      <button type="submit">Zapisz mnie →</button>
+    </form>
+  </div>
+
+  <footer><p>© 2026 Johnny • gawronskip4@gmail.com</p></footer>
+</div>
+</body>
+</html>
